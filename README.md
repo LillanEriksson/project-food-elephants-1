@@ -8,7 +8,7 @@ Your page will be built based on a random combination of cuisine, city, and desi
 
 ## Your team's combination: Italian restaurants in London
 
-Your team has been tasked with using the Zomato API to list Italian restaurants in London
+Your team has been tasked with using the Zomato API to list Italian restaurants in London in the style of the Uber Eats site:
 ![Uber Eats](https://camo.githubusercontent.com/7633f9d6d4c88712bc64769ab8001f32cf3720c8/68747470733a2f2f692e696d6775722e636f6d2f5653767a7547642e6a7067)
 
 ## How to complete this task
