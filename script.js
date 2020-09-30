@@ -21,16 +21,13 @@ fetch(API_URL, {headers: {"user-key": API_KEY}})
       <div class="info-box"><p><span class="material-icons">
       attach_money</span>${selectedRestaurant.average_cost_for_two} kr </p>
       <span class="material-icons">grade</span> <p>${selectedRestaurant.user_rating.aggregate_rating}</p></div>
-      <!--<div class="review"><p id="review-button">Reviews</p><p class="review-text">Review text placeholder</p></div>-->
+      <div class="review" id="review-${selectedRestaurant.id}" onclick="showReview(event)">Reviews</div>
+      <div class="review-text"><p>Review text placeholder</p></div>
       </div>`; 
       
-      // const reviewButton = document.getElementById("review-button");
-      // reviewButton.onclick(showReview);
-      // const showReview = () => {
-      //   this.classList.toggle('open')
-      // }
-
     });
   })
 
-  
+  const showReview = (event) => {
+    event.target.classList.toggle('open');
+  }

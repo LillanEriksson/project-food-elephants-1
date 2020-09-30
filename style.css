@@ -35,7 +35,7 @@ p{
 }
 .restaurant-container{
     width: 30%;
-    height: 250px;
+    min-height: 250px;
     margin-top: 15px;
 }
 .restaurant-container img{
@@ -60,22 +60,35 @@ p{
 .material-icons {
     font-size: 14px;
     margin-right: 5px;
+    margin-left: 5px;
+
 }
 
 .review {
-    
+    margin: 5px 0;
+    box-sizing: border-box;
+    padding: 2px;
+    height: 20px;
+    font-size: 12px;
+    background-color: rgb(245, 245, 245);
 }
 
 .review-text {
-    height: 0;
+    display: none;
+    max-height: 100px;
+    min-height: 20px;
     overflow: hidden;
-    transition: 0.8s;
-    background-color: springgreen;
+    box-sizing: border-box;
+    padding: 5px 0;
 }
 
 .open {
-    height: 20px;
+    background-color: rgb(245, 245, 245);
 }
+
+ .open + .review-text{
+    display: block;
+} 
 
 /*Tablet*/
 @media (min-width: 667px) and (max-width: 1024px) {
