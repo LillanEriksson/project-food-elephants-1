@@ -20,8 +20,6 @@ fetch(API_URL, {headers: {"user-key": API_KEY}})
       console.log(`Address: ${selectedRestaurant.location.address}`);
       
       mainContainer.innerHTML += `<img src="${selectedRestaurant.featured_image}" />`; 
-      
-
 
     });
     // console.log(italian.restaurants.restaurant.name);
