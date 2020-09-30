@@ -18,11 +18,17 @@ fetch(API_URL, {headers: {"user-key": API_KEY}})
       mainContainer.innerHTML += `<div class="restaurant-container">
       <img src="${selectedRestaurant.featured_image}" />
       <h2>${selectedRestaurant.name} ${selectedRestaurant.location.locality}</h2>
-      <p>Average cost: ${selectedRestaurant.average_cost_for_two}</p>
-      <p>Rating: ${selectedRestaurant.user_rating.aggregate_rating}</p>
+      <div class="info-box"><p><span class="material-icons">
+      attach_money</span>${selectedRestaurant.average_cost_for_two} kr </p>
+      <span class="material-icons">grade</span> <p>${selectedRestaurant.user_rating.aggregate_rating}</p></div>
+      <!--<div class="review"><p id="review-button">Reviews</p><p class="review-text">Review text placeholder</p></div>-->
       </div>`; 
       
-
+      // const reviewButton = document.getElementById("review-button");
+      // reviewButton.onclick(showReview);
+      // const showReview = () => {
+      //   this.classList.toggle('open')
+      // }
 
     });
   })

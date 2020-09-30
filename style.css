@@ -6,15 +6,22 @@ header{
     height: 100px;
     background-color: white;
     border-bottom: 2px solid rgb(174, 175, 175);
+    display: flex;
+    align-items: center;
+    padding: 15px;
 }
 h2{
     font-size: 14px;
     margin-bottom: 2px;
 }
+h1{
+    margin: 0;
+}
 p{
     font-size: 12px;
     margin: 0;
     color: slategray;
+    width: auto;
 }
 .heading-title-color{
     color: rgb(56, 150, 56);
@@ -35,4 +42,46 @@ p{
     width: 100%;
     height:170px;
     object-fit: cover;
+}
+
+.info-box {
+    background-color: rgb(245, 245, 245);
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+       
+}
+
+.info-box p{
+    color: black;
+}
+
+.material-icons {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.review {
+    
+}
+
+.review-text {
+    height: 0;
+    overflow: hidden;
+    transition: 0.8s;
+    background-color: springgreen;
+}
+
+.open {
+    height: 20px;
+}
+
+/*Tablet*/
+@media (min-width: 667px) and (max-width: 1024px) {
+
+}
+/*Mobile*/
+@media (max-width: 667px){
+
 }
