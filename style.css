@@ -4,8 +4,8 @@ body{
 }
 header{
     height: 100px;
-    background-color: rosybrown;
-    border-bottom: 1px solid slategray;
+    background-color: white;
+    border-bottom: 2px solid rgb(174, 175, 175);
 }
 h2{
     font-size: 14px;
@@ -16,11 +16,15 @@ p{
     margin: 0;
     color: slategray;
 }
+.heading-title-color{
+    color: rgb(56, 150, 56);
+}
 .main-container{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-
+    max-width: 1200px;
+    margin: auto;
 }
 .restaurant-container{
     width: 30%;

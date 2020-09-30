@@ -1,6 +1,7 @@
 
 const API_KEY = "7d6e8cfb6aa88bd5bc4dc97bf6908874";
-const API_URL = "https://developers.zomato.com/api/v2.1/search?entity_id=61&entity_type=city&cuisines=55";
+const API_URL = "https://developers.zomato.com/api/v2.1/search?entity_id=61&entity_type=city&count=18&cuisines=55";
+const API_URL_20 = "https://developers.zomato.com/api/v2.1/search?entity_id=61&entity_type=city&cuisines=55";
 
 const mainContainer = document.getElementById("mainContainer");
 
