@@ -77,9 +77,13 @@ p{
     display: none;
     max-height: 100px;
     min-height: 20px;
-    overflow: hidden;
+    overflow: auto;
     box-sizing: border-box;
     padding: 5px 0;
+}
+
+.review-text p {
+    margin: 5px 0;
 }
 
 .open {
@@ -90,11 +94,3 @@ p{
     display: block;
 } 
 
-/*Tablet*/
-@media (min-width: 667px) and (max-width: 1024px) {
-
-}
-/*Mobile*/
-@media (max-width: 667px){
-
-}

@@ -27,20 +27,19 @@ fetch(API_URL, { headers: { 'user-key': API_KEY } })
           //2) print out restaurant info
           mainContainer.innerHTML += `<div class="restaurant-container">
           <img src="${selectedRestaurant.featured_image}" />
-      <h2>${selectedRestaurant.name} ${selectedRestaurant.location.locality}</h2>
-      <div class="info-box"><p><span class="material-icons">
-      attach_money</span>${selectedRestaurant.average_cost_for_two} kr </p>
-      <span class="material-icons">grade</span> <p>${selectedRestaurant.user_rating.aggregate_rating}</p></div>
-      <div class="review" id="review-${selectedRestaurant.id}" onclick="showReview(event)">Reviews</div>
-      <div class="review-text"><p>Review text placeholder</p></div>
-      </div>`;
+          <h2>${selectedRestaurant.name} ${selectedRestaurant.location.locality}</h2>
+          <div class="info-box"><p> Average cost for two: ${selectedRestaurant.average_cost_for_two} £ </p>
+          <span class="material-icons">grade</span> <p>${selectedRestaurant.user_rating.aggregate_rating}</p></div>
+          <div class="review" onclick="showReview(event)">Reviews</div>
+          <div class="review-text" id="review-${selectedRestaurant.id}"></div>
+          </div>`;
 
           //loop over array of reviews and print them out
           slicedArray.forEach((review) => {
             var userReview = review.review.review_text;
             var userRatingText = review.review.rating_text;
             var userReviewTime = review.review.review_time_friendly;
-            mainContainer.innerHTML += `<p>${userRatingText} ${userReview}, ${userReviewTime}</p>`;
+            document.getElementById(`review-${selectedRestaurant.id}`).innerHTML += `<p>${userRatingText} ${userReview}, ${userReviewTime}</p>`;
           })
         })
     });
